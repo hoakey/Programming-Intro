@@ -17,7 +17,7 @@ function gameLoop() {
 	
 	
 	
-	// STEP 3: Move AI by calling moveAI()
+	// STEP 3: Move AI by calling setAiSpeed()
 	
 	
 	
