@@ -22,6 +22,16 @@ function startPlay() {
 	aiPaddle.position = screenHeight / 2;
 }
 
+function setAiSpeed() {
+	if (isBallBelowAIPaddle()) {
+		//If ball is below the paddle on screen, move the paddle down at its allowed speed
+		aiPaddle.speed = paddleSpeed;
+	} else {
+		//If ball is below the paddle on screen, move the paddle up at a negative of allowed speed
+		aiPaddle.speed = paddleSpeed * -1;
+	}
+}
+
 // Updates the position of each movable object
 function moveAllObjects() {
 	movePlayer();
